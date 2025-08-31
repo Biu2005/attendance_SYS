@@ -67,7 +67,7 @@ GenerateClassCluster=0
 DocumentUniqueId=ZZAUFNWU
 
 [Document2]
-DocumentPath=attendance_SYS.PcbDoc
+DocumentPath=attendane_SYS.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -81,10 +81,14 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=FBFYHBFY
+DocumentUniqueId=WUJCNUAA
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for attendnce_SYS\Design Rule Check - attendance_SYS.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for attendnce_SYS\Design Rule Check - attendane_SYS.html
 DItemRevisionGUID=
 
 [Configuration1]
