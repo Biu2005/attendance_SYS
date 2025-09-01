@@ -101,10 +101,14 @@ GenerateClassCluster=0
 DocumentUniqueId=WUJCNUAA
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for attendnce_SYS\Design Rule Check - attendance_SYS.html
+DocumentPath=Project Outputs for attendance_SYS\Design Rule Check - attendance_SYS.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
+DocumentPath=Project Outputs for attendnce_SYS\Design Rule Check - attendance_SYS.html
+DItemRevisionGUID=
+
+[GeneratedDocument3]
 DocumentPath=Project Outputs for attendnce_SYS\Design Rule Check - attendane_SYS.html
 DItemRevisionGUID=
 
