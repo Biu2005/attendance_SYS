@@ -131,9 +131,6 @@ void app_main()
     i2c_scanner();
     lcd_init();
 
-    // khởi tạo wifi
-    wifi_provising_config();
-
     // chạy task
     xTaskCreate(&wifi_task, "wifi", 4096, NULL, 5, NULL);
     xTaskCreate(&rfid_scanner_task, "rfid", 8000, NULL, 5, NULL);
