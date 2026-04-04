@@ -1,0 +1,19 @@
+# Build files
+build/
+attendance_system/build/
+
+# ESP-IDF
+sdkconfig.old
+*.bin
+*.elf
+*.map
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

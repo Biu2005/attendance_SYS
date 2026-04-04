@@ -3,10 +3,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <esp_log.h>
-#include "rc522.h"
-#include "driver/rc522_spi.h"
-#include "rc522_picc.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/queue.h"
@@ -14,6 +10,7 @@
 #include "driver_I2C.h"
 #include "wifi.h"
 #include "http.h"
+#include "esp_sleep.h"
 
 static QueueHandle_t rfid_queue = NULL;
 static const char *TAG_SYNC = "sync";
@@ -109,6 +106,18 @@ void http_post_task(void *parameters)
     }
 }
 
+void wifi_task(void *parameters)
+{
+    wifi_provising_config();
+
+    ESP_LOGI("WIFI", "Ready for HTTP");
+
+    // Start HTTP task ở đây (đúng timing)
+    xTaskCreate(&http_post_task, "http", 4096, NULL, 4, NULL);
+
+    vTaskDelete(NULL);
+}
+
 void app_main()
 {
     rfid_queue = xQueueCreate(5, UID_MAX_LEN);
@@ -126,6 +135,6 @@ void app_main()
     wifi_provising_config();
 
     // chạy task
-    xTaskCreate(&http_post_task, "http", 4096, NULL, 4, NULL);
+    xTaskCreate(&wifi_task, "wifi", 4096, NULL, 5, NULL);
     xTaskCreate(&rfid_scanner_task, "rfid", 8000, NULL, 5, NULL);
 }
