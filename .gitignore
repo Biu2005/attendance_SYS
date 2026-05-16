@@ -17,3 +17,9 @@ sdkconfig.old
 # OS
 .DS_Store
 Thumbs.db
+
+# History 
+History/
+
+# demo
+demo.mp4
