@@ -1,6 +1,7 @@
 # Build files
 build/
 attendance_system/build/
+attendance_system/.vscode
 
 # ESP-IDF
 sdkconfig.old
