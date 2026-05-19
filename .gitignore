@@ -2,7 +2,6 @@
 build/
 attendance_system/build/
 attendance_system/.vscode
-
 # ESP-IDF
 sdkconfig.old
 *.bin
@@ -24,3 +23,8 @@ History/
 
 # demo
 demo.mp4
+
+# Altium generated folders
+**/Project Logs for */
+**/Project Outputs for */
+**/__Previews/
