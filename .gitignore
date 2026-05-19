@@ -28,3 +28,7 @@ demo.mp4
 **/Project Logs for */
 **/Project Outputs for */
 **/__Previews/
+
+# VS Code settings
+.vscode/
+**/.vscode/s
